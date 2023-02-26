@@ -1,0 +1,394 @@
+:root {
+    --font1: 'Lato', sans-serif;
+    --font2: 'Lilita One', cursive;
+    --color1: #F59A1B;
+    --color2: #3B200B;
+    --color3: #F43127;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body {
+    background: #FAF3F2;
+}
+
+/* Borda na parte de baixo */
+.bdb { 
+    border-bottom: 1px solid rgba(73, 46, 21, 0.15);
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* Menu */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3b200b15;
+    padding: 12px 18px;
+    z-index: 2;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo__name {
+    margin-left: 5px;
+    font-family: var(--font1);
+    font-weight: 400;
+    color: #1d0605ee;
+    font-size: 1.25em;
+}
+
+.logo__name--negrito {
+    font-weight: 900;
+}
+
+.header__button {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Banner hero */
+
+.banner-hero {
+    background: url(../img/Bannermobile.png) black center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 856px;
+    display: flex;
+}
+
+.container-banner-hero__boxBanner {
+    margin-top: 101px;
+    margin-left: 23.85px;
+}
+.boxBanner__strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+.boxBanner__title {
+    font-family: var(--font2);
+    font-size: 53.35px;
+    color: var(--color2);
+}
+
+.boxBanner__title--orange {
+    color: var(--color1);
+}
+.boxBanner__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1d0605a9;
+    line-height: 22.4px;
+}
+.boxBanner__text--orange {
+    background-color: var(--color1);
+    font-weight: 900;
+    padding: 4px 5px;
+    border-radius: 10px;
+}
+
+.boxBanner__button {
+    margin-top: 20px;
+    background-color: var(--color3);
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* informações sobre entrega e hamburguer */
+
+.contInformacoes {
+    width: 355px;
+    height: 322px;
+    box-shadow: 0px 4px 35px rgba(179, 155, 132, 0.425);
+    background-color: white;
+    margin: -60px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contInformacoes__boxinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0px 0px;
+    padding: 0px 0px 15px;
+}
+
+.contInformacoes__boxinfo div {
+    width: 65%;
+}
+
+.boxinfo__img {
+    padding: 15px;
+    background-color: #FAE2CB;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.boxinfo__tlite {
+    font-family: var(--font2);
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+.boxinfo__text {
+    opacity: 0.6;
+    font-size: 16px;
+    color: #1D0605B0;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Ofertas especiais */
+
+.ofertas-especiais {
+    width: 430px;
+    margin: 90px auto;
+    
+} 
+.ofertas-especiais__tlite {
+    font-size: 25px;
+    font-family: var(--font2);
+    color: rgba(29, 6, 5, 0.9);
+    margin-bottom: 10px;
+}
+.ofertas-especiais__text {
+    color: rgba(29, 6, 5, 0.69);
+    margin-bottom: 14px;
+
+}
+.ofertas-especiais__box-ofertas {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 30px;
+}
+
+.box-ofertas__img1, .box-ofertas__img2, .box-ofertas__img3 {
+    width: 380px;
+    height: 212px;
+    border-radius: 10px;
+    background-size: cover;
+    padding: 14px 20px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.box-ofertas__img1{
+    background: url(../img/item1.png) no-repeat center center;
+}
+
+.box-ofertas__img2{
+    background: url(../img/item2.png) no-repeat center center;
+}
+.box-ofertas__img3{
+    background: url(../img/item3.png) no-repeat center center;
+}
+
+.box-ofertas__img1 h4, .box-ofertas__img2 h4, .box-ofertas__img3 h4 {
+    font-family: var(--font2);
+    text-transform: uppercase;
+    color: rgba(29, 6, 5, 0.9);
+    font-size: 20px;
+}
+
+.box-ofertas__img1:nth-child(1) h4, .box-ofertas__img1:nth-child(1) p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.box-ofertas__img1 p, .box-ofertas__img2 p, .box-ofertas__img3 p {
+    font-size: 18px;
+}
+
+.box-ofertas__img1:nth-child(1) span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 10px;
+    position: absolute;
+    bottom: 14px;
+    right: 20px;
+
+}
+
+.box-ofertas__img1:nth-child(1) strong {
+    font-family: var(--font2);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ofertas-especiais__box-info {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-info__instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.instagram__text {
+    margin-top: 30px;
+    color: rgba(29, 6, 5, 0.69);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.instagram__link {
+    color: #F43127;
+    text-transform: uppercase;
+    font-family: var(--font2);
+    font-size: 41px;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+/* Onde fica o nosso castelo*/
+
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.localizacao__tlite {
+    margin-bottom: 4px;
+    font-size: 25px;
+    color: rgba(29, 6, 5, 0.9);
+    text-transform: uppercase;
+    font-family: var(--font2);
+}
+
+.localizacao__text {
+    color: rgba(29, 6, 5, 0.69);
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 12px;
+}
+
+.localizacao__frame {
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* footer */
+
+.footer__redes {
+    color: #F59A1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.redes__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+    padding: 12px 0px;
+
+
+}
+
+.redes__name h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.redes__name h1 span {
+    font-weight: 900;
+}
+
+.redes__logo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px;
+}
+
+.redes__logo img {
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.redes__navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes__navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #3A210B;
+    margin-bottom: 13px;
+}
+
+.redes__navbar a:nth-child(1) {
+    font-weight: 700;
+    margin: 13px 0px;
+
+}
+
+.footer__direitos {
+    text-align: center;
+    margin: 12px 0px;
+    color: rgba(2, 14, 31, 0.69);
+}
+
+.footer__direitos a, .footer__direitos span {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(2, 14, 31, 0.69);
+}
+
+.footer__direitos a:hover {
+    color: var(--color1);
+}
