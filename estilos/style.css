@@ -15,6 +15,7 @@
 
 body {
     background: #FAF3F2;
+    margin: 0 auto;
 }
 
 /* Borda na parte de baixo */
@@ -35,7 +36,7 @@ body {
 .menu__header {
     position: fixed;
     top: 0;
-    width: 98%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
