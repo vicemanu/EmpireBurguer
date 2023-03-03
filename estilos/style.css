@@ -15,7 +15,6 @@
 
 body {
     background: #FAF3F2;
-    width: 100vw;
 }
 
 /* Borda na parte de baixo */
@@ -223,7 +222,7 @@ body {
 /* Ofertas especiais */
 
 .ofertas-especiais {
-    width: 430px;
+    width: 100%;
     margin: 90px auto;
     
 } 
