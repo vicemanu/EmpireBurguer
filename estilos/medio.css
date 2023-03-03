@@ -1,0 +1,102 @@
+/* Cardapio */
+.cardapio {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardapio__cardapio-box1 {
+    background: url(../img/medio/bg1cardapio.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;    
+    height: 260px;
+    padding: 25px 30px;
+}
+
+.cardapio-box1__titulo {
+    font-family: var(--font2);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.cardapio-box1__titulo span{
+    font-family: var(--font2);
+    background-color: var(--color1);
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.cardapio-box1__text {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1d0605a9;
+
+}
+
+.cardapio-box1__buttom {
+    margin-top: 20px;
+    background-color: var(--color3);
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.cardapio__cardapio-box2 {
+    background-color: #3B200B;
+    width: 100%;
+    min-height: 480px;
+    margin-bottom: 40px;
+    padding: 35px 30px 0px;
+}
+
+
+.cardapio-box2__titulo {
+    font-family: var(--font2);
+    color: var(--color1);
+    text-transform: uppercase;
+    font-size: 25px;
+
+}
+
+#cardapio-box2__root-menu {
+    margin:0 auto;
+}
+.root-menu__nome {
+    color: white;
+    font-size: 1.4em;
+    font-family: var(--font2);
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+
+.menu__descricao {
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 500px;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+@media screen and (min-width:820px) {
+
+    .cardapio {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cardapio__cardapio-box1 {
+        min-height: 480px;
+        background: url(../img/medio/bg2cardapio.png) center center no-repeat;
+    background-size: cover;
+    }
+}
