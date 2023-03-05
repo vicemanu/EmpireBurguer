@@ -81,13 +81,60 @@
 }
 /* --------------------------------------------------------------------------------------------------------- */
 
+/* Atendimentos */
+
+.atendimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.atendimento__imgbox {
+    position: relative;
+    width: 50%;
+    height: 340px;
+}
+
+ .imgbox_img1 {
+    position: absolute;
+    width: 280px;
+    height: 320px;
+    z-index: 2;
+}
+
+.imgbox_img2 {
+    position: absolute;
+    width: 340px;
+    left: -15px;
+    top: 136px;
+    z-index: 1;
+}
+
+.atendimento__boxconteudo {
+    padding: 0px 18px;
+    margin-bottom: 40px;
+}
 
 
 
+/* --------------------------------------------------------------------------------------------------------- */
+
+ /* Nossas entregas */
+
+
+
+ /* --------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------------------------------------- */
 
 
 
 @media screen and (min-width:820px) {
+
+/* Cardapio */
+
 
     .cardapio {
         display: flex;
@@ -97,6 +144,48 @@
     .cardapio__cardapio-box1 {
         min-height: 480px;
         background: url(../img/medio/bg2cardapio.png) center center no-repeat;
-    background-size: cover;
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
     }
+    .cardapio-box1__container {
+        width: 65%;
+    }
+
+    /* --------------------------------------------------------------------------------------------------------- */
+
+    /* Atendimentos */
+
+    .atendimento {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .atendimento__imgbox {
+        position: relative;
+        width: 380px;
+        height: 340px;
+    }
+
+    .atendimento__boxconteudo {
+        width: 420px;
+        padding-top: 50px;
+    }
+ /* --------------------------------------------------------------------------------------------------------- */
+
+
+ /* Nossas entregas */
+
+.nossas-entregas {
+    
+}
+
+
+
+  /* --------------------------------------------------------------------------------------------------------- */
 }
