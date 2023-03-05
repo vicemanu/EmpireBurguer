@@ -123,6 +123,12 @@
 
  /* Nossas entregas */
 
+ .nossas-entregas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
 
  .nossas-entregas__imgbox {
     position: relative;
@@ -171,25 +177,31 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
     }
 
     .atendimento__imgbox {
         position: relative;
-        width: 380px;
+        width: 300px;
         height: 340px;
+        margin: 0px 20px;
     }
 
     .atendimento__boxconteudo {
         width: 420px;
         padding-top: 50px;
     }
+
+
+
+
+
  /* --------------------------------------------------------------------------------------------------------- */
 
 
  /* Nossas entregas */
 
 .nossas-entregas {
+    
     
 }
 
