@@ -210,13 +210,15 @@ box-shadow: 0px 4px 40px rgba(179, 155, 132, 0.377);
 
 .faca-o-pedido {
     margin: 0 auto;
-    width: 280px;
+    width: 300px;
+    height: 320px;
     background-color: #F43127;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 8px 16px;
     
 }
 
