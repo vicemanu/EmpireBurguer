@@ -143,6 +143,8 @@
     margin-bottom: 20px;
  }
 
+ 
+
  .imgbox_img3 {
     position: absolute;
     left: -40px;
@@ -209,9 +211,8 @@ box-shadow: 0px 4px 40px rgba(179, 155, 132, 0.377);
 /* Faça o seu pedido */
 
 .faca-o-pedido {
-    margin: 0 auto;
-    width: 300px;
-    height: 320px;
+    margin: 0 auto 40px;
+    width: 90%;
     background-color: #F43127;
     border-radius: 10px;
     display: flex;
@@ -219,12 +220,59 @@ box-shadow: 0px 4px 40px rgba(179, 155, 132, 0.377);
     justify-content: center;
     flex-direction: column;
     padding: 8px 16px;
+    position: relative;
     
 }
 
+.faca-o-pedido__boximg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(29, 6, 5, 0.2);
+    transform: scale(0.9);
+    margin: 5px;
+}
+
+.faca-o-pedido__title {
+    font-family: var(--font2);
+    color: var(--color2);
+    text-transform: uppercase;
+    font-size: 16px;
+    border-top: 1px solid rgba(29, 6, 5, 0.4);
+    width: 95%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.faca-o-pedido__text {
+    margin: 4px 0px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+
+}
+.faca-o-pedido__text strong {
+    font-weight: 900;
+}
 
 
-
+.faca-o-pedido__button {
+    margin-bottom: 10px;
+    background: #FAE4D0;
+    font-weight: 700;
+    color: #F43127;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+}
  /* --------------------------------------------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------------------------------------------- */
