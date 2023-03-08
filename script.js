@@ -1,3 +1,24 @@
+// Aberto e fechado
+
+var setOpen = document.getElementById('time-loja')
+var time = new Date()
+var dia = time.getDay()
+var hora = time.getHours()
+
+if((dia >= 1 && dia <= 5) && hora >= 17 && hora <= 23) {
+    setOpen.style.backgroundColor = "rgb(94, 204, 94)"
+    setOpen.innerHTML = 'Aberto'
+} else if((dia == 0 || dia == 6) && hora >= 18 && hora <= 23 ) {
+    setOpen.innerHTML = 'Aberto'
+} else {
+    setOpen.innerHTML = 'Fechado'
+    setOpen.style.backgroundColor = "#8d1e19"
+    setOpen.style.color = "#fff"
+
+}
+
+
+// root do menu
 var rootmenu = document.getElementById("cardapio-box2__root-menu");
 
 var item = [
