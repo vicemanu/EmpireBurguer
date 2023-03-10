@@ -1,4 +1,10 @@
+
+
+
 /* Nossa realeza */
+
+
+
 
 .realeza {
     width: 100%;
@@ -34,6 +40,21 @@
     padding: 20px 25px;
 }
 
+.realeza__carrossel::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; 
+  }
+  
+  .realeza__carrossel::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .realeza__carrossel::-webkit-scrollbar-thumb {
+    background-color: var(--color1);
+    border-radius: 5px;
+    
+  }
+
 .carrossel_box-realeza {
     background: #FFFFFF;
     box-shadow: 0px 4px 25px rgba(60, 35, 13, 0.1);
@@ -43,9 +64,6 @@
     height: 212.34px;
     padding: 24px 20px;
     margin: 0px 20px;
-}
-.carrossel_box-realeza::-webkit-scrollbar {
-    
 }
 
 .carrossel_box-realeza > p {
