@@ -44,6 +44,9 @@
     padding: 24px 20px;
     margin: 0px 20px;
 }
+.carrossel_box-realeza::-webkit-scrollbar {
+    
+}
 
 .carrossel_box-realeza > p {
     color: rgba(29, 6, 5, 0.69);
