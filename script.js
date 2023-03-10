@@ -1,5 +1,4 @@
 // Aberto e fechado
-
 var setOpen = document.getElementById('time-loja')
 var time = new Date()
 var dia = time.getDay()
@@ -17,40 +16,73 @@ if((dia >= 1 && dia <= 5) && hora >= 17 && hora <= 23) {
 
 }
 
-// API
-
-var data = fetch('https://api.brchallenges.com/api/empire-burger/menu')
-// .then( result => result.json())
-// 
-
-  console.log(JSON.parse(data))
-// root do menu
+// menu
 var rootmenu = document.getElementById("cardapio-box2__root-menu");
 
-var item = [
-    'Classic burger ................................', 'Special big burger ........................',
-    'special big burger ........................',
-    'Mexican burger .............................'
-]
-
-var prc = [49.99, 49.99, 49.99, 49.99]
+const menuItens = async () => {
+    const data1 = await fetch("https://api.brchallenges.com/api/empire-burger/menu")
+    return data1.json()
+  }
 
 
-var dsp = [
-    'Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata',
-    'Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata',
-    'Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata',
-    'Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru, Tomate, Alface, Servidor do pão de batata'
-]
+  const formandoMenu = (e) => e.map(({ plate, ingredients, price }) =>`
+  <div>
+   <p class="root-menu__nome"> ${plate} ...................
+    <span class="root-menu__valor"> R$${Intl.NumberFormat().format(price)} </span> 
+    <p class="menu__descricao"> ${ingredients} </p>
+    </div>
+      `
+    )
+
+    
+
+
+// NOSSA REALEZA
+
+var rootrealeza = document.getElementById("realeza__carrossel");
+
+const realezaitens = async () => {
+    const data2 = await fetch('https://api.brchallenges.com/api/empire-burger/testimonials')
+    return data2.json()
+}
+const formandoRealeza = (e) => e.map(({age, image, name, testimonial}) => `
+<div class="carrossel_box-realeza">
+            <p>“${testimonial}”</p>
+            <div class="box-realeza__people">
+                <div class="people__formatimg">
+                    <img src=${image} alt="">
+                </div>
+                <div >
+                    <p class="people__name">${name}</p>
+                    <p class="people__desc">${age} Anos • Designer</p>
+                </div>
+            </div>
+        </div>
+        
+`
+
+)
 
 
 
-for (i=0 ; i < item.length  ; i++ ) {
-    rootmenu.innerHTML += `<div>
-    <p class="root-menu__nome"> ${item[i]}
-    <span class="root-menu__valor"> R$${Intl.NumberFormat().format(prc[i])} </span> 
-    <p class="menu__descricao"> ${dsp[i]} </p>
-    </div>`
+
+
+
+
+
+
+// gerando na tela
+
+
+const rootDOM = async () => {
+    const menuItems = await menuItens()
+    const naTelaMenu = formandoMenu(menuItems)
+    const realezaItens = await realezaitens()
+    const naTelaRealeza = formandoRealeza(realezaItens)
+
+    rootmenu.innerHTML += naTelaMenu
+    rootrealeza.innerHTML = ""
+    rootrealeza.innerHTML += naTelaRealeza
 }
 
- 
+rootDOM()

@@ -48,13 +48,29 @@
 .carrossel_box-realeza > p {
     color: rgba(29, 6, 5, 0.69);
     margin-bottom: 20px;
-    line-clamp: 3; /* fazer funcionar */
+    line-clamp: 4;
 }
 
 .box-realeza__people {
     display: flex;
     gap: 10px;
     align-items: center;
+    
+}
+
+.people__formatimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.people__formatimg img {
+    width: 150%;
 }
 
 .people__name {
