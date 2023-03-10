@@ -17,7 +17,13 @@ if((dia >= 1 && dia <= 5) && hora >= 17 && hora <= 23) {
 
 }
 
+// API
 
+var data = fetch('https://api.brchallenges.com/api/empire-burger/menu')
+// .then( result => result.json())
+// 
+
+  console.log(JSON.parse(data))
 // root do menu
 var rootmenu = document.getElementById("cardapio-box2__root-menu");
 
