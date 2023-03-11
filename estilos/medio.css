@@ -346,6 +346,10 @@ box-shadow: 0px 4px 40px rgba(179, 155, 132, 0.377);
 
 @media screen and (max-width:400px) {
 
+    .cardapio-box1__titulo {
+        font-size: 18px;
+    }
+
 .containerhorario__text {
     font-size: 12px;
     text-align: center;
