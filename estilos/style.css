@@ -39,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #3b200b15;
+    background-color: #3b200b50;
     padding: 12px 0px;
     z-index: 3;
 }
